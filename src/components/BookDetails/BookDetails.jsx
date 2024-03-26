@@ -40,8 +40,9 @@ const BookDetails = () => {
           </div>
           
          <div className="mt-10 flex gap-5">
-         <button className="btn btn-primary"> Read</button>
-          <button className="btn btn-primary"> Read</button>
+         <button  className="rounded-lg py-3 px-6 text-center text-xl bg-transparent text-black border-2 duration-300 hover:scale-90">Read</button>
+         <button  className="rounded-lg py-3 px-6 text-center text-xl bg-[#50B1C9] text-white border-2 duration-300 hover:scale-90">Wishlist</button>
+          
          </div>
           </div>
         </div>

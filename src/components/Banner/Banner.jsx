@@ -9,7 +9,7 @@ const Banner = () => {
                     <div className="w-[530px] h-72 mt-14">
                         <h1 className="text-5xl font-bold ">Books to freshen up your bookshelf</h1>
                        
-                        <button  className="rounded-lg py-3 px-6 text-center text-xl bg-[#23BE0A] text-white mt-14">View the List</button>
+                        <button  className="rounded-lg py-3 px-6 text-center text-xl bg-[#23BE0A] text-white mt-14 duration-300 hover:scale-90">View the List</button>
                     </div>
                 </div>
             </div>
