@@ -9,11 +9,17 @@ const BookDetails = () => {
     const book = books.find(book => book.bookId === idInt);
     console.log(book)
 
+    const wbook = books.find(wbook => wbook.bookId == idInt);
+    console.log(wbook)
+
   const handleAddToRead = () => {
-    saveDataToLocalStorage(book)
+    saveDataToLocalStorage({ data: book, listType: 'books' })
 
   }
 
+  const handleAddToWishlist = () => {
+    saveDataToLocalStorage({ data: book, listType: 'wishlistBooks' });
+  }
     return (
 
         <div className="max-w-7xl mx-auto mt-20 flex justify-center gap-10">
@@ -48,7 +54,7 @@ const BookDetails = () => {
           
          <div className="mt-10 flex gap-5">
          <button onClick={handleAddToRead}  className="rounded-lg py-3 px-6 text-center text-xl bg-transparent text-black border-2 duration-300 hover:scale-90">Read</button>
-         <button  className="rounded-lg py-3 px-6 text-center text-xl bg-[#50B1C9] text-white border-2 duration-300 hover:scale-90">Wishlist</button>
+         <button onClick={handleAddToWishlist} className="rounded-lg py-3 px-6 text-center text-xl bg-[#50B1C9] text-white border-2 duration-300 hover:scale-90">Wishlist</button>
           
          </div>
           </div>

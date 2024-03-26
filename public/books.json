@@ -21,7 +21,7 @@
         "totalPages": 328,
         "rating": 4.8,
         "category": "Fiction",
-        "tags": ["Dystopian", "Political", "Social Commentary"],
+        "tags": ["Dystopian", "Political", "Social"],
         "publisher": "Secker & Warburg",
         "yearOfPublishing": 1949
     },
@@ -34,7 +34,7 @@
         "totalPages": 224,
         "rating": 4.3,
         "category": "Fiction",
-        "tags": ["Coming-of-age", "Literary Fiction"],
+        "tags": ["Age-Drama", "Literary"],
         "publisher": "Little, Brown and Company",
         "yearOfPublishing": 1951
     },
@@ -47,7 +47,7 @@
         "totalPages": 281,
         "rating": 4.7,
         "category": "Fiction",
-        "tags": ["Classic", "Legal Drama", "Southern Gothic"],
+        "tags": ["Classic", "Drama", "Gothic"],
         "publisher": "J. B. Lippincott & Co.",
         "yearOfPublishing": 1960
     },
@@ -60,7 +60,7 @@
         "totalPages": 1178,
         "rating": 4.9,
         "category": "Fantasy",
-        "tags": ["Epic", "Adventure", "High Fantasy"],
+        "tags": ["Epic", "Adventure", "Fantasy"],
         "publisher": "George Allen & Unwin",
         "yearOfPublishing": 1954
     },
