@@ -1,0 +1,80 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "https://i.ibb.co/68d8BC8/pngwing-1-4.png",
+        "review": "A timeless classic exploring the decadence and moral decay of the Jazz Age.",
+        "totalPages": 180,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": ["Classic", "Romance", "Tragedy"],
+        "publisher": "Scribner",
+        "yearOfPublishing": 1925
+    },
+    {
+        "bookId": 2,
+        "bookName": "1984",
+        "author": "George Orwell",
+        "image": "https://i.ibb.co/3CY8xkw/kindpng-7318921.png",
+        "review": "A chilling dystopian novel that remains relevant today.",
+        "totalPages": 328,
+        "rating": 4.8,
+        "category": "Fiction",
+        "tags": ["Dystopian", "Political", "Social Commentary"],
+        "publisher": "Secker & Warburg",
+        "yearOfPublishing": 1949
+    },
+    {
+        "bookId": 3,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "https://i.ibb.co/g9H14rd/kindpng-1064993.png",
+        "review": "A compelling narrative of teenage angst and disillusionment.",
+        "totalPages": 224,
+        "rating": 4.3,
+        "category": "Fiction",
+        "tags": ["Coming-of-age", "Literary Fiction"],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+    },
+    {
+        "bookId": 4,
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "https://i.ibb.co/Bw8VTj1/kindpng-4022054-1.png",
+        "review": "An unforgettable story tackling themes of racial injustice and moral growth.",
+        "totalPages": 281,
+        "rating": 4.7,
+        "category": "Fiction",
+        "tags": ["Classic", "Legal Drama", "Southern Gothic"],
+        "publisher": "J. B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+    },
+    {
+        "bookId": 5,
+        "bookName": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "image": "https://i.ibb.co/84PVbqR/kindpng-81724-1.png",
+        "review": "A masterful epic fantasy that transports readers to a richly imagined world.",
+        "totalPages": 1178,
+        "rating": 4.9,
+        "category": "Fantasy",
+        "tags": ["Epic", "Adventure", "High Fantasy"],
+        "publisher": "George Allen & Unwin",
+        "yearOfPublishing": 1954
+    },
+    {
+        "bookId": 6,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "https://i.ibb.co/R08S67Z/kindpng-2193744-1.png",
+        "review": "A timeless romance novel with sharp social commentary.",
+        "totalPages": 279,
+        "rating": 4.6,
+        "category": "Romance",
+        "tags": ["Classic", "Regency", "Satire"],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+    }
+]
