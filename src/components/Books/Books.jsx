@@ -16,7 +16,7 @@ const Books = () => {
     return (
         <div>
             <div className="max-w-7xl mx-auto mt-20">
-                <h2 className="text-center text-4xl font-bold">Books: {books.length}</h2>
+                <h2 className="text-center text-4xl font-bold">Books</h2>
                 <div className="grid grid-cols-3 gap-10 justify-center mt-10">
                 {
                     
