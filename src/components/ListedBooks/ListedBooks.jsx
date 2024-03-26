@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 
+
+
 const ListedBooks = () => {
     const [appliedData, setAppliedData] = useState([]);
     const [wishlistBooks, setWishlistBooks] = useState([])
@@ -24,7 +26,7 @@ const ListedBooks = () => {
             <div className="max-w-7xl mx-auto bg-base-200 mt-10 p-8 rounded-2xl">
                 <h2 className="text-center text-4xl font-bold">Books</h2>
             </div>
-
+           
             <section className="max-w-7xl mx-auto   mt-10">
             <div role="tablist" className="tabs tabs-lifted">
                 <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Read Books" defaultChecked  />
@@ -72,7 +74,7 @@ const ListedBooks = () => {
                                 <div className="flex flex-col lg:flex-row gap-5 mb-5">
                                     <div className="flex gap-2 mt-5">
                                         {data.tags.map((tag, index) => (
-                                            <h2 key={index} className="border-2 bg-base-200 text-[#23BE0A] px-2 rounded-full font-medium">#{tag}</h2>
+                                            <h2 key={index} className="border-2 bg-base-200 text-[#23BE0A] py-1 px-2 rounded-full font-medium">#{tag}</h2>
                                         ))}
                                     </div>
                                     <h2 className="mt-5 text-[#131313CC] font-normal">Year of publishing : {data.yearOfPublishing}</h2>
@@ -85,7 +87,7 @@ const ListedBooks = () => {
                                     <p className=" py-1 px-5 border-0 rounded-full bg-[#328EFF26] text-[#0274ffe7]">Category : {data.category}</p>
                                     <p className="ml-2 py-1 text-center px-3 w-32 border-0 rounded-full bg-[#FFAC3326] text-[#ff9900de]">Rating : {data.rating}</p>
                                     <Link to={`/book/${data.bookId}`}>
-                                        <button className="rounded-full  px-5 text-center text-lg bg-[#23BE0A] text-white  duration-300 hover:scale-90">View Details</button>
+                                        <button className="rounded-full py-1  px-5 text-center text-lg bg-[#23BE0A] text-white  duration-300 hover:scale-90">View Details</button>
                                     </Link>
                                 </div>
                             </div>
