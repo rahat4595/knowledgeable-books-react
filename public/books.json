@@ -27,7 +27,7 @@
     },
     {
         "bookId": 3,
-        "bookName": "The Catcher in the Rye",
+        "bookName": "Catcher in the Rye",
         "author": "J.D. Salinger",
         "image": "https://i.ibb.co/g9H14rd/kindpng-1064993.png",
         "review": "A compelling narrative of teenage angst and disillusionment.",
@@ -53,7 +53,7 @@
     },
     {
         "bookId": 5,
-        "bookName": "The Lord of the Rings",
+        "bookName": "Lord of the Rings",
         "author": "J.R.R. Tolkien",
         "image": "https://i.ibb.co/84PVbqR/kindpng-81724-1.png",
         "review": "A masterful epic fantasy that transports readers to a richly imagined world.",
