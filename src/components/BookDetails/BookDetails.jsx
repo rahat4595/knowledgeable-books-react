@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveDataToLocalStorage } from "../../utility/localstorage";
 
 const BookDetails = () => {
 
@@ -7,6 +8,12 @@ const BookDetails = () => {
     const idInt = parseInt(bookId);
     const book = books.find(book => book.bookId === idInt);
     console.log(book)
+
+  const handleAddToRead = () => {
+    saveDataToLocalStorage(book)
+
+  }
+
     return (
 
         <div className="max-w-7xl mx-auto mt-20 flex justify-center gap-10">
@@ -40,7 +47,7 @@ const BookDetails = () => {
           </div>
           
          <div className="mt-10 flex gap-5">
-         <button  className="rounded-lg py-3 px-6 text-center text-xl bg-transparent text-black border-2 duration-300 hover:scale-90">Read</button>
+         <button onClick={handleAddToRead}  className="rounded-lg py-3 px-6 text-center text-xl bg-transparent text-black border-2 duration-300 hover:scale-90">Read</button>
          <button  className="rounded-lg py-3 px-6 text-center text-xl bg-[#50B1C9] text-white border-2 duration-300 hover:scale-90">Wishlist</button>
           
          </div>
