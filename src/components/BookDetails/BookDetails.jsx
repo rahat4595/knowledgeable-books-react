@@ -22,27 +22,25 @@ const BookDetails = () => {
     if (!readList.find(item => item.bookId === idInt)) {
       setReadList([...readList, book]);
       saveDataToLocalStorage({ data: book, listType: 'books' });
-      showToast("Added to Read list");
+      toast.success("Added to Read list");
     } else {
-      showToast("Already added to Read list");
+      toast.error("Already added to Read list");
     }
   }
 
   const handleAddToWishlist = () => {
     if (readList.find(item => item.bookId === idInt)) {
-      showToast("Book already added to Read list");
+      toast.error("Book already added to Read list");
     } else if (!wishlist.find(item => item.bookId === idInt)) {
       setWishlist([...wishlist, book]);
       saveDataToLocalStorage({ data: book, listType: 'wishlistBooks' });
-      showToast("Added to Wishlist");
+      toast.success("Added to Wishlist");
     } else {
-      showToast("Already added to Wishlist");
+      toast.error("Already added to Wishlist");
     }
   }
 
-  const showToast = (message) => {
-    toast.info(message);
-  }
+  
 
   return (
 

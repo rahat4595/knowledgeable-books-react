@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { AiOutlineDown } from "react-icons/ai";
+import { AiOutlineEnvironment } from "react-icons/ai";
+import { AiOutlineUser } from "react-icons/ai";
+import { AiOutlineFileText } from "react-icons/ai";
 
 
 
@@ -8,6 +12,7 @@ const ListedBooks = () => {
     const [appliedData, setAppliedData] = useState([]);
     const [wishlistBooks, setWishlistBooks] = useState([]);
     const [sortBy, setSortBy] = useState(null);
+    
 
     console.log(appliedData)
     useEffect(() => {
@@ -47,7 +52,7 @@ const ListedBooks = () => {
 
             <div className="max-w-7xl mx-auto text-center p-5">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="rounded-lg py-2 px-6 text-center text-base font-semibold bg-[#23BE0A] text-white">Sort By</div>
+                    <div tabIndex={0} role="button" className="rounded-lg py-2 flex gap-2 px-6 text-center text-base font-semibold bg-[#23BE0A] text-white">Sort By <AiOutlineDown className="mt-1"/></div>
                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                         <li onClick={() => handleSortBy("rating")}><a>Rating</a></li>
                         <li onClick={() => handleSortBy("pages")}><a>Number of pages</a></li>
@@ -73,11 +78,11 @@ const ListedBooks = () => {
                                                 <h2 key={index} className="border-2 bg-base-200 text-[#23BE0A] py-1 px-2 rounded-full font-medium">#{tag}</h2>
                                             ))}
                                         </div>
-                                        <h2 className="mt-5 text-[#131313CC] font-normal">Year of publishing : {data.yearOfPublishing}</h2>
+                                        <h2 className="mt-6 text-[#131313CC] flex gap-2 font-normal"><AiOutlineEnvironment className="mt-1" /> Year of publishing : {data.yearOfPublishing}</h2>
                                     </div>
                                     <div className="flex flex-col lg:flex-row lg:gap-16 ">
-                                        <p>Publisher : {data.publisher}</p>
-                                        <p>Pages : {data.totalPages}</p>
+                                        <p className="flex text-[#131313CC] gap-2"> <AiOutlineUser className="mt-1" />Publisher : {data.publisher}</p>
+                                        <p className="flex text-[#131313CC] gap-2"> <AiOutlineFileText className="mt-1" />Pages : {data.totalPages}</p>
                                     </div>
                                     <div className="grid grid-cols-1 lg:grid-cols-3 mt-5">
                                         <p className=" py-1 px-5 border-0 rounded-full bg-[#328EFF26] text-[#0274ffe7]">Category : {data.category}</p>
@@ -106,11 +111,11 @@ const ListedBooks = () => {
                                                 <h2 key={index} className="border-2 bg-base-200 text-[#23BE0A] py-1 px-2 rounded-full font-medium">#{tag}</h2>
                                             ))}
                                         </div>
-                                        <h2 className="mt-5 text-[#131313CC] font-normal">Year of publishing : {data.yearOfPublishing}</h2>
+                                        <h2 className="mt-6 text-[#131313CC] flex gap-2 font-normal"><AiOutlineEnvironment className="mt-1" /> Year of publishing : {data.yearOfPublishing}</h2>
                                     </div>
                                     <div className="flex flex-col lg:flex-row lg:gap-16 ">
-                                        <p>Publisher : {data.publisher}</p>
-                                        <p>Pages : {data.totalPages}</p>
+                                        <p className="flex text-[#131313CC] gap-2"> <AiOutlineUser className="mt-1" />Publisher : {data.publisher}</p>
+                                        <p className="flex text-[#131313CC] gap-2"> <AiOutlineFileText className="mt-1" />Pages : {data.totalPages}</p>
                                     </div>
                                     <div className="grid grid-cols-1 lg:grid-cols-3 mt-5">
                                         <p className=" py-1 px-5 border-0 rounded-full bg-[#328EFF26] text-[#0274ffe7]">Category : {data.category}</p>

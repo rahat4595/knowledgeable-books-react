@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { AiOutlineStar } from "react-icons/ai";
 
 const Book = ({book}) => {
     const {bookId,bookName,author,image,category,rating,tags} = book
@@ -20,7 +21,7 @@ const Book = ({book}) => {
                         <h2 className="border-b-2 py-5 border-dotted w-80">By : {author}</h2>
 
                         <div className="flex justify-between w-80 py-3">
-                            <p>{category}</p> <p>{rating}</p>
+                            <p>{category}</p> <p className='flex gap-3'>{rating} <AiOutlineStar className='mt-1' /></p>
                         </div>
                        
                     </div>

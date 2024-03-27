@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const PagesChart = () => {
     const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
@@ -32,9 +32,9 @@ const PagesChart = () => {
     };
 
     return (
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-7xl p-10 bg-base-200 rounded-xl mx-auto'>
             <BarChart
-                width={1000}
+                width={1200}
                 height={500}
                 data={bookData}
                 margin={{
@@ -48,6 +48,7 @@ const PagesChart = () => {
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
+                <ResponsiveContainer/>
                 <Bar dataKey="uv" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
                     {bookData.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={colors[index % 20]} />
