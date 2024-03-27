@@ -6,9 +6,9 @@ const PagesChart = () => {
     const [bookData, setBookData] = useState([]);
 
     useEffect(() => {
-        // Fetch book data from local storage
+        // Fetched book data from local storage
         const storedBooks = JSON.parse(localStorage.getItem('books')) || [];
-        // Map the book data to the required format
+        // Maped the book data 
         const chartData = storedBooks.map((book, index) => ({
             name: book.bookName,
             uv: book.totalPages, 

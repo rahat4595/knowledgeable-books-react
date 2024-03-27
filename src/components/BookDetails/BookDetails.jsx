@@ -19,7 +19,7 @@ const BookDetails = () => {
   const [wishlist, setWishlist] = useState(JSON.parse(localStorage.getItem('wishlistBooks')) || []);
 
   const handleAddToRead = () => {
-    if (!readList.some(item => item.bookId === idInt)) {
+    if (!readList.find(item => item.bookId === idInt)) {
       setReadList([...readList, book]);
       saveDataToLocalStorage({ data: book, listType: 'books' });
       showToast("Added to Read list");
@@ -29,9 +29,9 @@ const BookDetails = () => {
   }
 
   const handleAddToWishlist = () => {
-    if (readList.some(item => item.bookId === idInt)) {
+    if (readList.find(item => item.bookId === idInt)) {
       showToast("Book already added to Read list");
-    } else if (!wishlist.some(item => item.bookId === idInt)) {
+    } else if (!wishlist.find(item => item.bookId === idInt)) {
       setWishlist([...wishlist, book]);
       saveDataToLocalStorage({ data: book, listType: 'wishlistBooks' });
       showToast("Added to Wishlist");
