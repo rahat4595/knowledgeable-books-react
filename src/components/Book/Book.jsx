@@ -10,7 +10,7 @@ const Book = ({book}) => {
             
                     <div className="flex flex-col border-2 rounded-lg items-center pt-5">
                         <div className="w-80 h-60 bg-base-200 rounded-lg flex justify-center  items-center">
-                            <img className=""  src={image }alt="" />
+                            <img className="w-32 h-40 rounded-sm"  src={image }alt="" />
                         </div>
                         <div className="flex gap-2 mt-5">
                         {tags.map((tag, index) => (

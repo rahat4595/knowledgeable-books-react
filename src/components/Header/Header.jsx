@@ -10,7 +10,7 @@ const Header = () => {
             <li className="text-lg"><NavLink to="/listed">Listed Books</NavLink></li>
             <li className="text-lg"><NavLink to="/pages">Pages to Read</NavLink></li>
             <li className="text-lg"><NavLink to="/seller">Best Seller</NavLink></li>
-            <li className="text-lg"><NavLink to="/contact">Contact</NavLink></li>
+            <li className="text-lg"><NavLink to="/about">About Us</NavLink></li>
     </>
 
     return (

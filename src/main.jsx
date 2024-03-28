@@ -13,6 +13,7 @@ import BookDetails from './components/BookDetails/BookDetails';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import PagesChart from './components/PagesChart/PagesChart';
 import BestSeller from './components/BestSeller/BestSeller';
+import AboutUs from './components/AboutUs/AboutUs';
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: '/seller',
         element: <BestSeller></BestSeller>
+      },
+      {
+        path: '/about',
+        element: <AboutUs></AboutUs>
       },
     ],
   },

@@ -67,7 +67,9 @@ const ListedBooks = () => {
                     <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box lg:p-6" >
                         {sortData(appliedData).map((data) => (
                             <div key={data.bookId} className="flex flex-col lg:flex-row items-center space-x-4 mt-5 border-2 rounded-xl p-5">
-                                <img src={data.image} alt={data.bookName} className="bg-base-200 w-56 h-56" />
+                                <div className="bg-base-200 w-60 h-64 flex justify-center items-center rounded-xl">
+                                <img src={data.image} alt={data.bookName} className="w-52 h-56 rounded-xl" />
+                                </div>
                                 <div>
                                     <h3 className="font-bold text-2xl mb-5">{data.bookName}</h3>
                                     <p className="text-[#131313CC] font-medium">By : {data.author}</p>
@@ -100,7 +102,9 @@ const ListedBooks = () => {
                     <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box lg:p-6">
                         {sortData(wishlistBooks).map((data) => (
                             <div key={data.bookId} className="flex flex-col lg:flex-row items-center space-x-4 mt-5 border-2 rounded-xl p-5">
-                                <img src={data.image} alt={data.bookName} className="bg-base-200 w-56 h-56" />
+                               <div className="bg-base-200 w-60 h-64 flex justify-center items-center rounded-xl">
+                                <img src={data.image} alt={data.bookName} className="w-52 h-56 rounded-xl" />
+                                </div>
                                 <div>
                                     <h3 className="font-bold text-2xl mb-5">{data.bookName}</h3>
                                     <p className="text-[#131313CC] font-medium">By : {data.author}</p>

@@ -11,7 +11,7 @@ const PagesChart = () => {
         // Maped the book data 
         const chartData = storedBooks.map((book, index) => ({
             name: book.bookName,
-            uv: book.totalPages, 
+            pages: book.totalPages, 
         }));
         // Set the chart data in the state
         setBookData(chartData);
@@ -49,7 +49,7 @@ const PagesChart = () => {
                 <YAxis />
                 <Tooltip />
                 <ResponsiveContainer/>
-                <Bar dataKey="uv" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
+                <Bar dataKey="pages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
                     {bookData.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={colors[index % 20]} />
                     ))}
