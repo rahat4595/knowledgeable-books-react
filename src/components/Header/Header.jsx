@@ -6,20 +6,20 @@ const Header = () => {
 
     const links = <>
 
-    <li className="text-lg"><NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/">Home</NavLink></li>
+    <NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border px-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/">Home</NavLink>
 
-    <li className="text-lg"><NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/listed">Listed Books</NavLink></li>
+    <NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border px-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/listed">Listed Books</NavLink>
 
-    <li className="text-lg"><NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/pages">Pages to Read</NavLink></li>
+    <NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border px-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/pages">Pages to Read</NavLink>
 
-    <li className="text-lg"><NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/seller">Best Seller</NavLink></li>
+    <NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border px-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/seller">Best Seller</NavLink>
     
-    <li className="text-lg"><NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/about">About Us</NavLink></li>
+    <NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border px-1 rounded-md border-[#23BE0A] ' : 'text-lg font-semibold'} to="/about">About Us</NavLink>
 </>
 
     return (
         <div>
-        <div className="navbar bg-base-100 max-w-7xl mx-auto">
+        <div className="navbar mt-4 lg:mt-10 bg-base-100 max-w-7xl mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -34,7 +34,7 @@ const Header = () => {
                 <h1 className="text-md lg:text-2xl font-bold">Bookish Bliss</h1>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu flex gap-5 menu-horizontal px-1">
                     {
                         links
                     }
