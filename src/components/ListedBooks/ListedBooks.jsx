@@ -45,7 +45,7 @@ const ListedBooks = () => {
     
 
     return (
-        <div className="">
+        <div className="p-5 lg:p-0">
             <div className="max-w-7xl mx-auto bg-base-200 mt-10 p-8 rounded-2xl">
                 <h2 className="text-center text-4xl font-bold">Books</h2>
             </div>
@@ -64,7 +64,7 @@ const ListedBooks = () => {
             <section className="max-w-7xl mx-auto   mt-24">
                 <div role="tablist" className="tabs tabs-lifted">
                     <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Read Books" defaultChecked />
-                    <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box lg:p-6" >
+                    <div role="tabpanel" className="tab-content bg-base-100 lg:border-base-300 rounded-box lg:p-6" >
                         {sortData(appliedData).map((data) => (
                             <div key={data.bookId} className="flex flex-col lg:flex-row items-center space-x-4 mt-5 border-2 rounded-xl p-5">
                                 <div className="bg-base-200 w-60 h-64 flex justify-center items-center rounded-xl">
@@ -99,7 +99,7 @@ const ListedBooks = () => {
                     </div>
 
                     <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Wishlist Books" />
-                    <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box lg:p-6">
+                    <div role="tabpanel" className="tab-content bg-base-100 lg:border-base-300 rounded-box lg:p-6">
                         {sortData(wishlistBooks).map((data) => (
                             <div key={data.bookId} className="flex flex-col lg:flex-row items-center space-x-4 mt-5 border-2 rounded-xl p-5">
                                <div className="bg-base-200 w-60 h-64 flex justify-center items-center rounded-xl">
