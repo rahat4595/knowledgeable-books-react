@@ -61,7 +61,7 @@ const ListedBooks = () => {
                 </div>
             </div>
 
-            <section className="max-w-7xl mx-auto   mt-24">
+            <section className="max-w-7xl mx-auto mb-10  mt-24">
                 <div role="tablist" className="tabs tabs-lifted">
                     <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Read Books" defaultChecked />
                     <div role="tabpanel" className="tab-content bg-base-100 lg:border-base-300 rounded-box lg:p-6" >

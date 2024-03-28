@@ -23,7 +23,7 @@
         "category": "Fiction",
         "tags": ["Dystopian", "Political", "Social"],
         "publisher": "Secker & Warburg",
-        "yearOfPublishing": 1949
+        "yearOfPublishing": 2017
     },
     {
         "bookId": 3,
@@ -70,11 +70,11 @@
         "author": "J. K. Rowling",
         "image": "https://i.ibb.co/2vWR2Mt/jessica-fadel-q-Xu-MWgoga6-Q-unsplash.jpg",
         "review": "A young wizard discovers his magical heritage and battles dark forces at Hogwarts School.",
-        "totalPages": 279,
+        "totalPages": 384,
         "rating": 4.9,
         "category": "Magic",
         "tags": ["Fantasy", "Young adult fiction"],
         "publisher": "Bloomsbury & Scholastic",
-        "yearOfPublishing": 1813
+        "yearOfPublishing": 2007 
     }
 ]

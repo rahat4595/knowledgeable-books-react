@@ -6,12 +6,16 @@ const Header = () => {
 
     const links = <>
 
-            <li className="text-lg"><NavLink to="/">Home</NavLink></li>
-            <li className="text-lg"><NavLink to="/listed">Listed Books</NavLink></li>
-            <li className="text-lg"><NavLink to="/pages">Pages to Read</NavLink></li>
-            <li className="text-lg"><NavLink to="/seller">Best Seller</NavLink></li>
-            <li className="text-lg"><NavLink to="/about">About Us</NavLink></li>
-    </>
+    <li className="text-lg"><NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/">Home</NavLink></li>
+
+    <li className="text-lg"><NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/listed">Listed Books</NavLink></li>
+
+    <li className="text-lg"><NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/pages">Pages to Read</NavLink></li>
+
+    <li className="text-lg"><NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/seller">Best Seller</NavLink></li>
+    
+    <li className="text-lg"><NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/about">About Us</NavLink></li>
+</>
 
     return (
         <div>

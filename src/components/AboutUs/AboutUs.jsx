@@ -1,6 +1,25 @@
-
+import { useState, useEffect } from 'react';
 
 const AboutUs = () => {
+
+    const [cardWidth, setCardWidth] = useState('100%');
+
+    useEffect(() => {
+        const handleResize = () => {
+            setCardWidth(window.innerWidth > 768 ? '400px' : '100%');
+        };
+
+        // Initial resize
+        handleResize();
+
+        // Event listener for window resize
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup function to remove event listener
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+
     return (
         <div className="max-w-7xl mx-auto">
             <div className=" mt-10 p-5 lg:p-0">
@@ -56,7 +75,7 @@ const AboutUs = () => {
                         <div className="text-lg font-black">About Us</div>
 
 
-                        We serve as enduring companions, providing solace, wisdom, and inspiration during quiet moments. Each book carries the potential to educate, enlighten, and expand perspectives, enriching minds with valuable knowledge and insights.
+                        <p className='text-[#131313CC]'>We serve as enduring companions, providing solace, wisdom, and inspiration during quiet moments. Each book carries the potential to educate, enlighten, and expand perspectives, enriching minds with valuable knowledge and insights.</p>
                     </div>
                     <hr />
                 </li>
@@ -69,7 +88,7 @@ const AboutUs = () => {
 
                         <div className="text-lg font-black">Why Choose Us</div>
 
-                        From captivating stories to profound revelations, books cultivate empathy and understanding, forging connections among readers across diverse cultures and generations.
+                        <p className='text-[#131313CC]'>From captivating stories to profound revelations, books cultivate empathy and understanding, forging connections among readers across diverse cultures and generations.</p>
                     </div>
                     <hr />
                 </li>
@@ -80,9 +99,9 @@ const AboutUs = () => {
                     </div>
                     <div className="timeline-start md:text-end mb-10">
 
-                        <div className="text-lg font-black">Our Services</div>
+                        <div className="text-lg font-black">Books Category</div>
 
-                        Discover personalized book selections with our Bookshelf Services, crafted to match your unique tastes and preferences. Immerse yourself in a universe of literary treasures, where every shelf is brimming with adventures, knowledge, and inspiration.
+                        <p className='text-[#131313CC]'>Explore our diverse collection of books spanning various genres and categories. From thrilling mysteries to heartwarming romances, thought-provoking non-fiction to captivating fantasy, we have something for every reader. Discover your next literary adventure with us today!</p>
                     </div>
                     <hr />
                 </li>
@@ -94,7 +113,7 @@ const AboutUs = () => {
                     <div className="timeline-end mb-10">
 
                         <div className="text-lg font-black">About Our Books</div>
-                        our collection of books represents a curated selection of timeless classics, contemporary bestsellers, and hidden gems waiting to be discovered. Each title is carefully chosen to cater to a diverse range of interests and preferences, ensuring that there is something for every reader to enjoy. Whether you are seeking thrilling adventures, thought-provoking insights, or heartwarming tales, our books are here to enrich your reading journey. Explore our library and embark on an unforgettable literary adventure with us.
+                        <p className='text-[#131313CC]'>  our collection of books represents a curated selection of timeless classics, contemporary bestsellers, and hidden gems waiting to be discovered. Each title is carefully chosen to cater to a diverse range of interests and preferences, ensuring that there is something for every reader to enjoy. Whether you are seeking thrilling adventures, thought-provoking insights, or heartwarming tales, our books are here to enrich your reading journey. Explore our library and embark on an unforgettable literary adventure with us.</p>
                     </div>
                     <hr />
                 </li>
@@ -102,17 +121,14 @@ const AboutUs = () => {
             </ul>
 
             <div className=" mt-10 p-5 lg:p-0">
-                <h2 className="text-center text-4xl font-bold">Get in Touch</h2>
+                <h2 className="text-center text-4xl font-bold">Sign UP Now!</h2>
 
             </div>
 
             <div className="hero my-10  rounded-xl">
                 <div className="hero-content flex-col lg:gap-10 lg:flex-row-reverse">
-                    <div className="text-center lg:w-2/4 hidden lg:block lg:text-left">
-                        <h1 className="text-5xl font-bold">Sign Up Now!</h1>
-                        <p className="py-6">Ready to unlock exclusive benefits? Join our community today! Sign up now to stay updated on the latest releases, enjoy personalized recommendations, and access special offers.</p>
-                    </div>
-                    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    
+                    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100" style={{ width: cardWidth }}>
                         <form className="card-body">
                             <div className="form-control">
                                 <label className="label">

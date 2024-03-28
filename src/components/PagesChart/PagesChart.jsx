@@ -33,9 +33,9 @@ const PagesChart = () => {
 
     return (
         <div className='max-w-7xl p-10 bg-base-200 rounded-xl mx-auto'>
+            <ResponsiveContainer width="100%" height={500}>
             <BarChart
-                width={1200}
-                height={500}
+               
                 data={bookData}
                 margin={{
                     top: 20,
@@ -48,13 +48,14 @@ const PagesChart = () => {
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
-                <ResponsiveContainer/>
+                
                 <Bar dataKey="pages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
                     {bookData.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={colors[index % 20]} />
                     ))}
                 </Bar>
             </BarChart>
+            </ResponsiveContainer>
         </div>
     );
 };

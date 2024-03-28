@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
-        <div className="p-5 lg:p-0">
+        <div className="p-5 overflow-hidden lg:p-0">
             <div className="hero  bg-base-200 rounded-xl max-w-7xl mx-auto mt-5 h-full lg:h-[555px]">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img  src="https://i.ibb.co/HTR46Vd/pngwing-1-removebg-preview.png" className="max-w-sm rounded-lg  " />
