@@ -86,11 +86,11 @@ const ListedBooks = () => {
                                         <p className="flex text-[#131313CC] gap-2"> <AiOutlineUser className="mt-1" />Publisher : {data.publisher}</p>
                                         <p className="flex text-[#131313CC] gap-2"> <AiOutlineFileText className="mt-1" />Pages : {data.totalPages}</p>
                                     </div>
-                                    <div className="grid grid-cols-1 lg:grid-cols-3 mt-5">
+                                    <div className="grid grid-cols-1 gap-2 lg:grid-cols-3 mt-5">
                                         <p className=" py-1 px-5 border-0 rounded-full bg-[#328EFF26] text-[#0274ffe7]">Category : {data.category}</p>
-                                        <p className="ml-2 py-1 text-center px-3 w-32 border-0 rounded-full bg-[#FFAC3326] text-[#ff9900de]">Rating : {data.rating}</p>
+                                        <p className="lg:ml-5 py-1 text-center px-3 lg:w-32 border-0 rounded-full bg-[#FFAC3326] text-[#ff9900de]">Rating : {data.rating}</p>
                                         <Link to={`/book/${data.bookId}`}>
-                                            <button className="rounded-full py-1 px-5 text-center text-lg bg-[#23BE0A] text-white  duration-300 hover:scale-90">View Details</button>
+                                            <button className="rounded-full w-full py-1 px-5 text-center text-lg bg-[#23BE0A] text-white  duration-300 hover:scale-90">View Details</button>
                                         </Link>
                                     </div>
                                 </div>
@@ -121,13 +121,14 @@ const ListedBooks = () => {
                                         <p className="flex text-[#131313CC] gap-2"> <AiOutlineUser className="mt-1" />Publisher : {data.publisher}</p>
                                         <p className="flex text-[#131313CC] gap-2"> <AiOutlineFileText className="mt-1" />Pages : {data.totalPages}</p>
                                     </div>
-                                    <div className="grid grid-cols-1 lg:grid-cols-3 mt-5">
+                                    <div className="grid grid-cols-1 gap-2 lg:grid-cols-3 mt-5">
                                         <p className=" py-1 px-5 border-0 rounded-full bg-[#328EFF26] text-[#0274ffe7]">Category : {data.category}</p>
-                                        <p className="ml-2 py-1 text-center px-3 w-32 border-0 rounded-full bg-[#FFAC3326] text-[#ff9900de]">Rating : {data.rating}</p>
+                                        <p className="lg:ml-5 py-1 text-center px-3 lg:w-32 border-0 rounded-full bg-[#FFAC3326] text-[#ff9900de]">Rating : {data.rating}</p>
                                         <Link to={`/book/${data.bookId}`}>
-                                            <button className="rounded-full py-1  px-5 text-center text-lg bg-[#23BE0A] text-white  duration-300 hover:scale-90">View Details</button>
+                                            <button className="rounded-full w-full py-1 px-5 text-center text-lg bg-[#23BE0A] text-white  duration-300 hover:scale-90">View Details</button>
                                         </Link>
                                     </div>
+                                    
                                 </div>
                             </div>
                         ))}

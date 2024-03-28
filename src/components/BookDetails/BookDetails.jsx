@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import { saveDataToLocalStorage } from "../../utility/localstorage";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -40,13 +40,13 @@ const BookDetails = () => {
     }
   }
 
-  
+
 
   return (
 
     <div className="max-w-7xl mx-auto lg:mt-20 flex flex-col lg:flex-row justify-center p-5 lg:p-0 gap-10">
       <div className="rounded-xl w-full lg:w-[450px] h-full lg:h-[550px] bg-base-200 flex items-center justify-center" >
-      <img className="w-4/5  lg:w-[400px] h-4/5 lg:h-[500px] bg-base-200 rounded-2xl" src={book.image} alt="" />
+        <img className="w-4/5  lg:w-[400px] h-4/5 lg:h-[500px] bg-base-200 rounded-2xl" src={book.image} alt="" />
       </div>
 
       <div>
@@ -79,8 +79,14 @@ const BookDetails = () => {
         <div className="mt-10 flex gap-5">
           <button onClick={handleAddToRead} className="rounded-lg py-3 px-6 text-center text-xl bg-transparent text-black border-2 duration-300 hover:scale-90">Read</button>
           <button onClick={handleAddToWishlist} className="rounded-lg py-3 px-6 text-center text-xl bg-[#50B1C9] text-white border-2 duration-300 hover:scale-90">Wishlist</button>
+
           <ToastContainer position="top-right" />
         </div>
+        <Link to='/'>
+          <div className="text-start">
+            <button className="rounded-lg py-3 px-6 text-center text-xl bg-[#23BE0A] text-white mt-8 duration-300 hover:scale-90">Go To Home</button>
+          </div>
+        </Link>
       </div>
     </div>
   );

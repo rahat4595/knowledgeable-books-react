@@ -5,12 +5,12 @@ const BestSeller = () => {
 
         <>
 
-            <div className="max-w-7xl mx-auto mt-10 p-5 lg:p-0">
+            <div className="max-w-7xl mx-auto lg:mt-10 p-5 lg:p-0">
             <h2 className="text-center text-4xl font-bold">Best Seller</h2>
             <p className="text-center mt-5 text-base lg:px-80">Lets have a look at our Top-selling books across various genres, capturing readers imaginations and inspiring millions worldwide.</p>
             </div>
 
-            <div className="max-w-7xl mx-auto mt-10 grid grid-cols-1 lg:grid-cols-3 place-items-center lg:mb-10 p-5 lg:p-0">
+            <div className="max-w-7xl mx-auto lg:mt-10 grid grid-cols-1 lg:grid-cols-3 place-items-center lg:mb-10 p-5 lg:p-0">
 
 
                 <div className="card w-full lg:w-80 bg-base-100 shadow-xl mt-10">

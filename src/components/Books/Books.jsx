@@ -15,7 +15,7 @@ const Books = () => {
 
     return (
         <div>
-            <div className="max-w-7xl p-5 lg:p-0 mx-auto mt-20">
+            <div className="max-w-7xl p-5 lg:p-0 mx-auto lg:mt-20">
                 <h2 className="text-center text-4xl font-bold">Books</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 justify-center mt-10">
                 {

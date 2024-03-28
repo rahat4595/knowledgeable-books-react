@@ -4,7 +4,7 @@ const AboutUs = () => {
     return (
         <div className="max-w-7xl mx-auto">
             <div className=" mt-10 p-5 lg:p-0">
-                <h2 className="text-center text-4xl font-bold">Why Choose us</h2>
+                <h2 className="text-center text-4xl font-bold">Our Numbers</h2>
 
             </div>
 
@@ -46,15 +46,17 @@ const AboutUs = () => {
                 <h2 className="text-center text-4xl font-bold">About Us</h2>
 
             </div>
-            <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mt-10">
+            <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical p-5 mt-10">
                 <li>
                     <div className="timeline-middle">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
                     </div>
                     <div className="timeline-start md:text-end mb-10">
-                        <time className="font-mono italic">1984</time>
-                        <div className="text-lg font-black">First Macintosh computer</div>
-                        The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. It played a pivotal role in establishing desktop publishing as a general office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; it came with a keyboard and single-button mouse.
+
+                        <div className="text-lg font-black">About Us</div>
+
+
+                        We serve as enduring companions, providing solace, wisdom, and inspiration during quiet moments. Each book carries the potential to educate, enlighten, and expand perspectives, enriching minds with valuable knowledge and insights.
                     </div>
                     <hr />
                 </li>
@@ -64,9 +66,10 @@ const AboutUs = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
                     </div>
                     <div className="timeline-end mb-10">
-                        <time className="font-mono italic">1998</time>
-                        <div className="text-lg font-black">iMac</div>
-                        iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc. It has been the primary part of Appl consumer desktop offerings since its debut in August 1998, and has evolved through seven distinct forms
+
+                        <div className="text-lg font-black">Why Choose Us</div>
+
+                        From captivating stories to profound revelations, books cultivate empathy and understanding, forging connections among readers across diverse cultures and generations.
                     </div>
                     <hr />
                 </li>
@@ -76,9 +79,10 @@ const AboutUs = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
                     </div>
                     <div className="timeline-start md:text-end mb-10">
-                        <time className="font-mono italic">2001</time>
-                        <div className="text-lg font-black">iPod</div>
-                        The iPod is a discontinued series of portable media players and multi-purpose mobile devices designed and marketed by Apple Inc. The first version was released on October 23, 2001, about 8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450 million iPod products as of 2022. Apple discontinued the iPod product line on May 10, 2022. At over 20 years, the iPod brand is the oldest to be discontinued by Apple
+
+                        <div className="text-lg font-black">Our Services</div>
+
+                        Discover personalized book selections with our Bookshelf Services, crafted to match your unique tastes and preferences. Immerse yourself in a universe of literary treasures, where every shelf is brimming with adventures, knowledge, and inspiration.
                     </div>
                     <hr />
                 </li>
@@ -88,24 +92,49 @@ const AboutUs = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
                     </div>
                     <div className="timeline-end mb-10">
-                        <time className="font-mono italic">2007</time>
-                        <div className="text-lg font-black">iPhone</div>
-                        iPhone is a line of smartphones produced by Apple Inc. that use  own iOS mobile operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone accounts for 15.6% of global smartphone market share
+
+                        <div className="text-lg font-black">About Our Books</div>
+                        our collection of books represents a curated selection of timeless classics, contemporary bestsellers, and hidden gems waiting to be discovered. Each title is carefully chosen to cater to a diverse range of interests and preferences, ensuring that there is something for every reader to enjoy. Whether you are seeking thrilling adventures, thought-provoking insights, or heartwarming tales, our books are here to enrich your reading journey. Explore our library and embark on an unforgettable literary adventure with us.
                     </div>
                     <hr />
                 </li>
-                <li>
-                    <hr />
-                    <div className="timeline-middle">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-                    </div>
-                    <div className="timeline-start md:text-end mb-10">
-                        <time className="font-mono italic">2015</time>
-                        <div className="text-lg font-black">Apple Watch</div>
-                        The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness tracking, health-oriented capabilities, and wireless telecommunication, and integrates with iOS and other Apple products and services
-                    </div>
-                </li>
+
             </ul>
+
+            <div className=" mt-10 p-5 lg:p-0">
+                <h2 className="text-center text-4xl font-bold">Get in Touch</h2>
+
+            </div>
+
+            <div className="hero my-10  rounded-xl">
+                <div className="hero-content flex-col lg:gap-10 lg:flex-row-reverse">
+                    <div className="text-center lg:w-2/4 hidden lg:block lg:text-left">
+                        <h1 className="text-5xl font-bold">Sign Up Now!</h1>
+                        <p className="py-6">Ready to unlock exclusive benefits? Join our community today! Sign up now to stay updated on the latest releases, enjoy personalized recommendations, and access special offers.</p>
+                    </div>
+                    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <form className="card-body">
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Email</span>
+                                </label>
+                                <input type="email" placeholder="email" className="input input-bordered" required />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Password</span>
+                                </label>
+                                <input type="password" placeholder="password" className="input input-bordered" required />
+                                
+                            </div>
+                            <div className="form-control mt-6">
+                                <button className="btn btn-primary">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 };
