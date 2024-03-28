@@ -2,6 +2,10 @@
 
 Bookish Bliss is an online platform for book lovers to discover, discuss, and share their favorite reads.
 
+**Netlify Live Site:** [Bookish Bliss](https://fictional-books.netlify.app)
+
+**Surge Live Site:** [Bookish Bliss](https://fictional-books.surge.sh)
+
 ## Features
 
 - **Personalized Recommendations:** Get tailored book recommendations based on your reading preferences.
